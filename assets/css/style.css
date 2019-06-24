@@ -1,124 +1,485 @@
-* {
-  box-sizing: border-box;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,300italic,600,700,800');
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: #403f45;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  font: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 150%;
-  color: #777777;
+.mainbackground {
+    opacity: 0.15;
+    filter: alpha(opacity=15); /* For IE8 and earlier */
 }
-
-header {
-  padding: 20px;
-  margin-bottom: 20px;
-  background: #ffffff;
-  border-color: #cccccc;
-  font-family: 'Georgia', Times, Times New Roman, serif;
-}
-
-h1 {
-  padding: 20px 0;
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 28px;
-  color: #777777;
-  text-align: center;
-  background: #ffffff;
-  border-color: #cccccc;
-}
-
-h2 {
-  font-size: 24px;
-  color: #4aaaa5;
-  padding: 20px;
+.navbar {
+    padding: .8rem;
+    border-bottom: 1px solid #ddd;
 
 }
 
-a {
-  color: #d21034;
+.navbar-brand {
+    font-size: 2.5em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    border-bottom: 5px solid #EBCC40;
+    text-transform: lowercase;
+    padding: 0;
 }
 
-section {
-  padding: 20px;
-  margin: 20px;
-  background: #ccc;
-  margin-bottom: 20px;
-}
-#Top-left {
-  background-color: #666;
-  padding: 30px;
-  width: 33.3%;
-  float: left;
-}
-#Top-right {
-  float: right;
-  background-color: #888;
-  padding: 30px;
-  width: 33.3%
-
-}
-#Middle-left {
-  float: left;
-  background-color: #666;
-  padding: 30px;
-  width: 33.3%;
-}
-#Middle-right {
-  clear: right;
-  background-color: #eee;
-  width: 100%;
-  overflow:auto;
-}
-#Middle-left {
-  clear: left;
-  background-color: #eee;
-  width: 100%;
-  overflow:auto;
-}
-#Bottom-left {
-  clear: left;
-  background-color: #eee;
-  width: 100%;
-  overflow:auto;
+.firstLogo{
+    color: #333;
 }
 
+.lastLogo{
+    color: #333;
 }
+
+.navbar-nav li {
+    /* font-family: 'Shadows Into Light', cursive; */
+    font-size: 1em; 
+    padding-right: 20px;
+
+}
+
+.nav-link {
+    font-size: 1em !important;
+    color: #8e8e8e;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+
+.carousel-inner img {
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+    color: #2e2e2e;
+}
+
+.carousel-caption h1{
+    font-size: 500%;
+    text-transform: uppercase;
+
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    font-weight: 500;
+
+    padding-bottom: 1rem;
+}
+
+/* Shutter Out Horizontal */
+a:hover {
+    text-decoration: none;
+}
+
+.hvr-shutter-out-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    /* box-shadow: 0 0 1px rgba(0, 0, 0, 0); */
+    position: relative;
+
+    background-color: whitesmoke;
+
+    color: #575766;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  
+    border-radius: 0px;
+    border: 2px solid #505066;
+
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+  .hvr-shutter-out-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #EBCC40;
+    color: #fff;
+
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  
+    border: 3px solid #EBCC40;
+    border-radius: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+  .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+    color: white;
+  }
+  .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+/*   
+.btn-primary {
+    border-radius: 60px;
+    background-color: rgb(143, 207, 240);
+    border: 1px solid #505066;
+}
+
+.btn-primary:hover{
+    background-color: #505066;
+    border: 1px solid #505066;
+} */
+
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.padding {
+    padding-bottom: 2rem;
+}
+
+.welcome {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.welcome hr {
+    border-top: 2px solid  rgb(250, 217, 71);;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+
+.parallax1 { 
+    /* The image used */
+    background-image: url("../images/BarbaraFickTyping.jpg");
+  
+    /* Set a specific height */
+    height: 250px; 
+  
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important; */
+  }
+
+  .parallax2 { 
+    /* The image used */
+    background-image: url("../images/BarbaraFickTyping.jpg");
+  
+    /* Set a specific height */
+    height: 250px; 
+  
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important; */
+  }
+
+#aboutme {
+    border: 1px dashed #b4b4b4;
+    padding: 2em;
+}
+
+.card {
+    transition: 0.3s;
+    border: 1px solid #EBCC40;
+}
+.card-title {
+    font-size: 1rem;
+}
+
+.card-body {
+    font-size: .8rem;
+    height: 300px;
+}
+
+.card-img-top {
+    max-height: 100%;
+}
+
+.buttonContainer {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+
+}
+
+
+
+.fa-code {
+    color: #e54d26;
+}
+
+.fa-bold {
+    color: #563d7c;
+}
+
+.fa-css3 {
+    color: #2163af;
+}
+
+.fa-js-square {
+   color: #f7df1e;
+}
+
+.fa-database {
+    color: #f29111;
+}
+
+.fa-node{
+    color: #3c873a;
+}
+
+.fa-react {
+    color: #00d8ff;
+}
+
+.fa-angular {
+    color: red;
+}
+
+.fa-linkedin {
+    font-size: 1em;
+}
+
+
+.fa-code, .fa-bold, .fa-css3, .fa-js-square, .fa-react, .fa-angular, .fa-node, .fa-database, .fa-mobile-alt {
+    font-size: 4em;
+    margin: 1rem;
+}
+
+.mongoIcon, .expressIcon, .reduxIcon, .jqueryIcon {
+    height: 4em;
+    margin: 1rem;
+}
+
+
+.bio-img {
+    height: 400px;
+    width: 400px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #8e8e8e;
+    
+    max-width: 100%;
+    max-height: 100%;
+
+    border-radius: 100%;
+    margin-top: 25px;
+}
+
+.social a {
+    font-size: 4.5em;
+    padding: 3rem;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+}
+.fa-linkedin:hover {
+    color: #d5d5d5;
+}
+
 footer {
-  color: #777777;
-  background-color: #666666;
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
 }
 
-.container {
-  width: 1024px;
-  margin: 0 auto;
+hr.light{
+    border-top: 1px solid #EBCC40;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+
 }
 
-#main-bio,
-#contact-info,
-#bio-image {
-  float: left;
+footer a {
+    color: #d5d5d5;
 }
 
-#main-bio {
-  width: 70%;
+hr.light-100{
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+
 }
 
-#contact-info {
-  width: 30%;
+
+.contactLinks {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
-#bio-image {
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
+.contact {
+    padding: 10px;
+    border-right: solid gray 2px;
 }
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-} 
+@media screen and (min-width: 592px) {
+    .parallax1 { 
+        /* The image used */
+        background-image: url("../images/BarbaraFickTyping.jpg");
+      
+        /* Set a specific height */
+        height: 250px; 
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+      }
+    
+      .parallax2 { 
+        /* The image used */
+        background-image: url("../images/BarbaraFickTyping.jpg");
+      
+        /* Set a specific height */
+        height: 250px; 
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+      }
+  }
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+    .social a {
+        font-size: 4em;
+        padding: 2rem;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 45%;
+        color: #2e2e2e;
+
+    }
+    
+    .carousel-caption h1{
+        font-size: 350%;
+        text-transform: uppercase;
+
+    }
+    
+    .carousel-caption h3 {
+        font-size: 140%;
+        font-weight: 500;
+        padding-bottom: .2rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+
+    .display-4 {
+        font-size: 200%;
+
+    }
+
+    .social a {
+        font-size: 2.5em;
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        color: #2e2e2e;
+        top: 50%;
+    }
+    
+    .carousel-caption h1{
+        font-size: 250%;
+        text-transform: uppercase;
+    }
+    
+    .carousel-caption h3 {
+        font-size: 110%;
+        font-weight: 500;
+        padding-bottom: .2rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 90%;
+        padding: 4px 8px;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .display-4 {
+        font-size: 160%;
+    }
+
+    .social a {
+        font-size: 2em;
+        padding: .7rem;
+    }
+
+    .card {
+        margin-bottom: 2em;
+    }
+
+    .contact {
+        border: none;
+    }
+
+
+}
