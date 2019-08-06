@@ -279,7 +279,7 @@ a:hover {
 }
 
 
-.fa-code, .fa-bold, .fa-css3, .fa-js-square, .fa-react, .fa-angular, .fa-node, .fa-database, .fa-mobile-alt {
+.fa-code, .fa-bold, .fa-css3, .fa-js-square, .fa-react, .fa-angular, .fa-node, .fa-php, .fa-database, .fa-mobile-alt {
     font-size: 4em;
     margin: 1rem;
 }
@@ -302,9 +302,9 @@ a:hover {
     height: auto;
 
     border-radius: 100%;
-    margin-bottom: 1em;
-
-
+    margin: 1em;
+    margin-right: 3em;
+    float: left;
 }
 
 .social a {
